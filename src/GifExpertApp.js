@@ -13,17 +13,14 @@ export const GifExpertApp = () => {
             <h1 className="py-3 text-center">Buscador de Gifs by JLGM</h1>
             <AddCategory setCategorie = { setCategorie }/>
             <hr/>
-
-            <ol>
-                {
-                    categorie.map( category => 
-                        <GifGrid 
-                            key =  { category } 
-                            category = { category } 
-                        />
-                    )
-                }
-            </ol>
+            {
+                categorie.map( category => 
+                    <GifGrid 
+                        key =  { category } 
+                        category = { category } 
+                    />
+                )
+            }
         </div>
     )
 }

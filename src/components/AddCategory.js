@@ -18,16 +18,18 @@ export const AddCategory = ( { setCategorie } ) => {
     }
 
     return (
-            <div className="container mb-3">
+            <div className=" mb-3">
                 
                 <form className="form-group"  onSubmit = {handleSubmit}>
+                
                     <input
                     className="form-control "
                     type='text'
                     value = { inputValue }
                     onChange = { handleInputChange }
-                    
+                    placeholder="Buscar"
                     /> 
+
                 </form>
             </div>
 

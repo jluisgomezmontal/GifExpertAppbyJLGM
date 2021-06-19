@@ -18,16 +18,18 @@ export const AddCategory = ( { setCategorie } ) => {
     }
 
     return (
-        
-            <form onSubmit = {handleSubmit}>
-
-                <input
-                type='text'
-                value = { inputValue }
-                onChange = { handleInputChange }
-
-                /> 
-            </form>
+            <div className="container mb-3">
+                
+                <form className="form-group"  onSubmit = {handleSubmit}>
+                    <input
+                    className="form-control "
+                    type='text'
+                    value = { inputValue }
+                    onChange = { handleInputChange }
+                    
+                    /> 
+                </form>
+            </div>
 
     )
 }

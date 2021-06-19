@@ -9,8 +9,8 @@ export const GifExpertApp = () => {
     const [categorie, setCategorie] = useState(['Miles Morales']);
     
     return (
-        <>
-            <h2>GifExpertApp by JLGM</h2>
+        <div className="container" >
+            <h1 className="py-3 text-center">Buscador de Gifs by JLGM</h1>
             <AddCategory setCategorie = { setCategorie }/>
             <hr/>
 
@@ -24,7 +24,7 @@ export const GifExpertApp = () => {
                     )
                 }
             </ol>
-        </>
+        </div>
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { GifExpertApp } from './GifExpertApp';
-import './index.css';
+import 'bootswatch/dist/vapor/bootstrap.min.css'
 
 ReactDOM.render(
   <GifExpertApp/>,
